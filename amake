@@ -381,7 +381,7 @@ boards() {
     echo " pro5v328 = Pro/Pro Mini w/ ATMega368, 5V, 16MHz"
     echo " pro3v32u4 = Spark Pro Micro w/ ATMega32u4, 3V, 8MHz"
     echo "            (requires installation of Sparkfun board info from:"
-    echo "             https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json)
+    echo "             https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json)"
     echo "     nano = Nano w/ ATMega168"
     echo "  nano328 = Nano 328 w/ ATMega328"
     echo "       ng = NG w/ ATMega168"

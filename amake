@@ -113,6 +113,9 @@ which_board() {
         pro5v328)
             MCUSTR="arduino:avr:pro:cpu=16MHzatmega328"
             ;;
+        pro3v32u4)
+            MCUSTR="SparkFun:avr:promicro:cpu=8MHzatmega32U4"
+            ;;
         nano)
             MCUSTR="arduino:avr:nano:cpu=atmega168"
             ;;
@@ -371,11 +374,14 @@ boards() {
     fi
     echo " Most used aliases, from the OEM:"
     echo " ================================"
-    echo "      uno = Arduino Uno w/ ATMega328p, 16Mhz"
-    echo "      pro = Pro/Pro Mini w/ ATMega168, 3V, 8Mhz"
-    echo "    pro5v = Pro/Pro Mini w/ ATMega168, 5V, 16Mhz"
-    echo "   pro328 = Pro/Pro Mini w/ ATMega328, 3V, 8Mhz"
-    echo " pro5v328 = Pro/Pro Mini w/ ATMega368, 5V, 16Mhz"
+    echo "      uno = Arduino Uno w/ ATMega328p, 16MHz"
+    echo "      pro = Pro/Pro Mini w/ ATMega168, 3V, 8MHz"
+    echo "    pro5v = Pro/Pro Mini w/ ATMega168, 5V, 16MHz"
+    echo "   pro328 = Pro/Pro Mini w/ ATMega328, 3V, 8MHz"
+    echo " pro5v328 = Pro/Pro Mini w/ ATMega368, 5V, 16MHz"
+    echo " pro3v32u4 = Spark Pro Micro w/ ATMega32u4, 3V, 8MHz"
+    echo "            (requires installation of Sparkfun board info from:"
+    echo "             https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json)
     echo "     nano = Nano w/ ATMega168"
     echo "  nano328 = Nano 328 w/ ATMega328"
     echo "       ng = NG w/ ATMega168"
